@@ -1,3 +1,9 @@
+# revision 22362
+# category Package
+# catalog-ctan /macros/latex/contrib/easylist
+# catalog-date 2010-02-28 15:24:01 +0100
+# catalog-license lppl
+# catalog-version 1.3
 Name:		texlive-easylist
 Version:	1.3
 Release:	1
@@ -42,6 +48,7 @@ configure the appearance of the list; lists may be nested
 %doc %{_texmfdistdir}/doc/latex/easylist/README
 %doc %{_texmfdistdir}/doc/latex/easylist/easylist-doc.pdf
 %doc %{_texmfdistdir}/doc/latex/easylist/easylist-doc.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -52,3 +59,5 @@ configure the appearance of the list; lists may be nested
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
