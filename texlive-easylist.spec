@@ -6,7 +6,7 @@
 # catalog-version 1.3
 Name:		texlive-easylist
 Version:	1.3
-Release:	5
+Release:	6
 Summary:	Lists using a single active character
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/easylist
