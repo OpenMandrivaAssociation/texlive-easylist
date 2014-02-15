@@ -1,12 +1,12 @@
-# revision 22362
+# revision 32661
 # category Package
 # catalog-ctan /macros/latex/contrib/easylist
-# catalog-date 2010-02-28 15:24:01 +0100
+# catalog-date 2012-04-14 11:10:53 +0200
 # catalog-license lppl
 # catalog-version 1.3
 Name:		texlive-easylist
 Version:	1.3
-Release:	6
+Release:	7
 Summary:	Lists using a single active character
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/easylist
@@ -49,17 +49,3 @@ configure the appearance of the list; lists may be nested
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.3-2
-+ Revision: 751281
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.3-1
-+ Revision: 718293
-- texlive-easylist
-- texlive-easylist
-- texlive-easylist
-- texlive-easylist
-
