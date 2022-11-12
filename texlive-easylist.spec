@@ -1,18 +1,12 @@
-# revision 32661
-# category Package
-# catalog-ctan /macros/latex/contrib/easylist
-# catalog-date 2012-04-14 11:10:53 +0200
-# catalog-license lppl
-# catalog-version 1.3
 Name:		texlive-easylist
-Version:	1.3
-Release:	12
+Version:	32661
+Release:	1
 Summary:	Lists using a single active character
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/easylist
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/easylist.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/easylist.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/easylist.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/easylist.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -26,12 +20,12 @@ configure the appearance of the list; lists may be nested
 (effectively to unlimited depth).
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -42,7 +36,7 @@ configure the appearance of the list; lists may be nested
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
