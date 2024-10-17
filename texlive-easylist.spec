@@ -3,7 +3,7 @@ Version:	32661
 Release:	2
 Summary:	Lists using a single active character
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/easylist
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/easylist
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/easylist.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/easylist.doc.r%{version}.tar.xz
